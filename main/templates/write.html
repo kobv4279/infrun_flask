@@ -1,0 +1,98 @@
+{% extends "main.html" %}
+
+{% block contents %}
+
+<script>
+    $(document).ready(function(){
+        $("#summernote").summernote({
+            heigth:300,
+            minHeight: null,
+            maxHeight: null,
+            lang:"ko-KR",
+            popover:{
+                image:[],
+                link:[],
+                air:[],
+            },
+            callbacks: {
+                onImageUpload: function(image){
+                    for(var i=0; i<image.length; i++){
+                        uploadImage(image[i]);
+                    }
+                }
+            }
+        });
+    
+    });
+
+
+    function uploadImage(image){
+        var data = new FormData();
+        data.append("image", image);
+        $.ajax({
+            url: "{{url_for('board.upload_image')}}",
+            cache: false,
+            contentType: false,
+            processData: false,
+            data: data,
+            type: "post",
+            success: function(url){
+                var image = $("<img>").attr("src", url).css('max-width',"700px");
+                $("#summernote").summernote("insertNode", image[0]);
+
+            },
+            error: function(data){
+                console.log(data);
+                alert(data);
+            }
+
+        });
+    }
+
+1
+</script>
+
+<script>
+    function checkForm(){
+        if($.trim($("#title").val()) == ""){
+            alert("제목을 입력하세요");
+            $("#title").focus();
+            return false;
+        }
+        if($.trim($("#summernote").val()) == ""){
+            alert("내용을 입력하세요");
+            $("#summernote").focus();
+            return false;
+        }
+    }
+</script>
+
+<form action="{{url_for('board.board_write')}}"
+method="POST" name="form" onsubmit="return checkForm()" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="name">작성자</label>
+        <input class="form-control" id="name" type="text" name="name" value="{{session['name']}}" readonly>
+    </div>
+    <div class="form-group">
+        <label for="title">제목</label>
+        <input type="text" name="title" id="title" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="contents">내용</label>
+        
+        <textarea rows="8" type="" name="contents" id="summernote" class="form-control" placeholder="내용을 입력하세요">
+
+        </textarea>  
+</div>
+    <div class="custom-file">
+        <input class="custom-file-input" id="customFIle" type="file" name="attachfile">
+        <label class="custom-file-label" for="customFile">파일선택</label>
+    </div>
+    
+    <div class="text-center">
+        <input class="btn btn-primary" type="submit" value="작성하기"></div>
+       
+</form>
+
+
+{% endblock %}
