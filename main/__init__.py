@@ -24,7 +24,7 @@ import os
 #mongo라는 인스턴스에 PyMongo에 app을 넘겨줌
 
 app = Flask(__name__)
-app.config["MONGO_URI"]= "mongodb://localhost:27017/myweb"
+app.config["MONGO_URI"]= "mongodb://mongo:27017/myweb"
 app.config["SECRET_KEY"] = "abcd"
 app.config["PERMANENT_SESSION_LIFETIME"] = timedelta(minutes=30)
 mongo = PyMongo(app)
@@ -33,8 +33,8 @@ mongo = PyMongo(app)
 #플라스크에서 이미지 업로드 구현
 #이미지를 보관할 path를 설정
 
-BOARD_IMAGE_PATH = "G:\\images"
-BOARD_ATTACH_FILE_PATH = "G:\\uploads"
+BOARD_IMAGE_PATH = "/root/myweb"
+BOARD_ATTACH_FILE_PATH = "/root/uploads"
 ALLOWED_EXTENSIONS = set(["txt", "pdf","png","jpg","jpeg","gif"])
 
 

@@ -52,3 +52,292 @@ worker 4 buried after 1 seconds
 worker 5 buried after 1 seconds
 goodbye to uWSGI.
 VACUUM: unix socket myweb.sock removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Tue May 12 08:44:21 2020] ***
+compiled with version: 9.2.1 20191109 on 11 May 2020 05:52:07
+os: Linux-5.3.0-kali2-amd64 #1 SMP Debian 5.3.9-3kali1 (2019-11-20)
+nodename: kali
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /root/myweb
+detected binary path: /root/myweb/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 15126
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address myweb.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.2 (default, Apr  1 2020, 15:52:55)  [GCC 9.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x559a11ac1640
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+Traceback (most recent call last):
+  File "./run.py", line 5, in <module>
+    from main import app
+  File "./main/__init__.py", line 7, in <module>
+    from flask_pymongo import PyMongo
+ModuleNotFoundError: No module named 'flask_pymongo'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20747)
+spawned uWSGI worker 1 (pid: 20749, cores: 1)
+spawned uWSGI worker 2 (pid: 20750, cores: 1)
+spawned uWSGI worker 3 (pid: 20751, cores: 1)
+spawned uWSGI worker 4 (pid: 20752, cores: 1)
+spawned uWSGI worker 5 (pid: 20753, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket myweb.sock removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Tue May 12 10:35:02 2020] ***
+compiled with version: 9.2.1 20191109 on 11 May 2020 05:52:07
+os: Linux-5.3.0-kali2-amd64 #1 SMP Debian 5.3.9-3kali1 (2019-11-20)
+nodename: kali
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /root/myweb
+detected binary path: /root/myweb/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 15126
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address myweb.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.2 (default, Apr  1 2020, 15:52:55)  [GCC 9.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x557443808640
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x557443808640 pid: 25760 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 25760)
+spawned uWSGI worker 1 (pid: 25763, cores: 1)
+spawned uWSGI worker 2 (pid: 25764, cores: 1)
+spawned uWSGI worker 3 (pid: 25765, cores: 1)
+spawned uWSGI worker 4 (pid: 25766, cores: 1)
+spawned uWSGI worker 5 (pid: 25767, cores: 1)
+*** Starting uWSGI 2.0.18 (64bit) on [Tue May 12 10:54:33 2020] ***
+compiled with version: 9.2.1 20191109 on 11 May 2020 05:52:07
+os: Linux-5.3.0-kali2-amd64 #1 SMP Debian 5.3.9-3kali1 (2019-11-20)
+nodename: kali
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /root/myweb
+detected binary path: /root/myweb/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 15126
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address myweb.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.2 (default, Apr  1 2020, 15:52:55)  [GCC 9.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55bdc99e14f0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55bdc99e14f0 pid: 25915 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 25915)
+spawned uWSGI worker 1 (pid: 25918, cores: 1)
+spawned uWSGI worker 2 (pid: 25919, cores: 1)
+spawned uWSGI worker 3 (pid: 25920, cores: 1)
+spawned uWSGI worker 4 (pid: 25921, cores: 1)
+spawned uWSGI worker 5 (pid: 25922, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+worker 5 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket myweb.sock removed.
+SIGINT/SIGQUIT received...killing workers...
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+goodbye to uWSGI.
+unlink(): No such file or directory [core/uwsgi.c line 1660]
+*** Starting uWSGI 2.0.18 (64bit) on [Tue May 12 11:00:38 2020] ***
+compiled with version: 9.2.1 20191109 on 11 May 2020 05:52:07
+os: Linux-5.3.0-kali2-amd64 #1 SMP Debian 5.3.9-3kali1 (2019-11-20)
+nodename: kali
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /root/myweb
+detected binary path: /root/myweb/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 15126
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address myweb.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.2 (default, Apr  1 2020, 15:52:55)  [GCC 9.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55830140d640
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55830140d640 pid: 25960 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 25960)
+spawned uWSGI worker 1 (pid: 25963, cores: 1)
+spawned uWSGI worker 2 (pid: 25964, cores: 1)
+spawned uWSGI worker 3 (pid: 25965, cores: 1)
+spawned uWSGI worker 4 (pid: 25966, cores: 1)
+spawned uWSGI worker 5 (pid: 25967, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket myweb.sock removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Tue May 12 11:08:27 2020] ***
+compiled with version: 9.2.1 20191109 on 11 May 2020 05:52:07
+os: Linux-5.3.0-kali2-amd64 #1 SMP Debian 5.3.9-3kali1 (2019-11-20)
+nodename: kali
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /root/myweb
+detected binary path: /root/myweb/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 15126
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address myweb.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.2 (default, Apr  1 2020, 15:52:55)  [GCC 9.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55cb4628e640
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55cb4628e640 pid: 26017 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 26017)
+spawned uWSGI worker 1 (pid: 26020, cores: 1)
+spawned uWSGI worker 2 (pid: 26021, cores: 1)
+spawned uWSGI worker 3 (pid: 26022, cores: 1)
+spawned uWSGI worker 4 (pid: 26023, cores: 1)
+spawned uWSGI worker 5 (pid: 26024, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket myweb.sock removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Tue May 12 11:10:40 2020] ***
+compiled with version: 9.2.1 20191109 on 11 May 2020 05:52:07
+os: Linux-5.3.0-kali2-amd64 #1 SMP Debian 5.3.9-3kali1 (2019-11-20)
+nodename: kali
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /root/myweb
+detected binary path: /root/myweb/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 15126
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address myweb.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.2 (default, Apr  1 2020, 15:52:55)  [GCC 9.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x56054b972640
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x56054b972640 pid: 26104 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 26104)
+spawned uWSGI worker 1 (pid: 26107, cores: 1)
+spawned uWSGI worker 2 (pid: 26108, cores: 1)
+spawned uWSGI worker 3 (pid: 26109, cores: 1)
+spawned uWSGI worker 4 (pid: 26110, cores: 1)
+spawned uWSGI worker 5 (pid: 26111, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 5 buried after 1 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket myweb.sock removed.
